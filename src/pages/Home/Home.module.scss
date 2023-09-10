@@ -236,18 +236,18 @@ $white: #ffffff;
          display: grid;
          grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
          grid-row-gap: 3rem;
+         grid-column-gap: 20px;
          .repo {
             padding: 2rem;
             background-color: $black;
             border-radius: 30px;
             text-decoration: none;
             color: white;
-            &:not(:last-child) {
-               margin-right: 3rem;
-            }
+
             &__info {
                float: right;
                display: flex;
+               gap: 10px;
                justify-content: center;
                align-items: center;
 
@@ -265,10 +265,9 @@ $white: #ffffff;
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  &:not(:last-child) {
-                     margin-right: 1rem;
-                  }
                   list-style: none;
+                  gap: 1rem;
+
                   svg {
                      margin-right: 0.3rem;
                   }
